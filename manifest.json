@@ -1,0 +1,31 @@
+{
+  "short_name": "AdMgr Quiz v5",
+  "name": "FB AdMgr Sim - Quiz Only v5",
+  "description": "Simulation how to use Facebook Ad Manager",
+  "maintainer": {
+    "name": "Sophos Productions",
+    "email": "devops@sophosproductions.com"
+  },
+  "version": "0.0.1",
+  "sandbox": "allow-presentation allow-scripts allow-same-origin",
+  "configurationExamples": [
+    {
+      "name": "Completed",
+	  "description": "Thank you for completing this simulation",
+      "configuration": {},
+	  "graderConfiguration": {
+		"status": "passed"
+	  }
+    }
+  ],
+  "authorizations": {},
+  "macros": [],
+  "actionTypes": ["GET_SESSION_CONFIGURATION", "SET_HEIGHT"],
+  "accessibility": {
+    "mobileCompatibility": {
+      "supportsTouch": true,
+      "minHeightPx": 200,
+      "minWidthPx": 150
+    }
+  }
+}
