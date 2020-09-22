@@ -70,6 +70,21 @@ var API = {
 			} catch (e) {
 				console.error("Error submitting answer");
 			}
+			try {
+			courseraApi.callMethod({
+				type: "SET_COMPLETE",
+				  onSuccess: function() {
+					console.log("SET_COMPLETE.onSuccess");
+				  },
+				  onError: function(error) { 
+					console.log("SET_COMPLETE.error=" + error);
+				  },
+
+			  });
+			} catch (e) {
+				console.error("Error submitting set_complete");
+			}
+
 			
 		} else if (item == 'cmi.suspend_data') {
 		}
